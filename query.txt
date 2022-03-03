@@ -5,10 +5,14 @@ group by p.name
 
 2.
 select p.name as person_name, i.name as item_name  from persons p 
-join items i on t.item_id = i.id
-join transactions t on t.person_id = p.id 
+left join items i on t.item_id = i.id
+left join transactions t on t.person_id = p.id 
 where t.date between '2020-01-01' and '2020-06-25'
 group by p.name, i.name
 
 3.
-
+select name as person_name from persons p
+left join transactions t on t.person_id = p.id 
+left join items i on t.item_id = i.id
+group by person_name
+order by sum(cast(i.price as numeric)) desc

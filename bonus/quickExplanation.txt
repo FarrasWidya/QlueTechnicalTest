@@ -1,5 +1,5 @@
 concurrency vs parallelism
 
-lets say a person have 2 things to do.
-If he do it 1 by 1 (doesnt have to be done to switch to other task), he use method called concurrency
-If he multitasking simultaneously, he use method called parallelism
+lets say 3 person have 1 things to do.
+If they do it in turns (lets say person 1 do it for 20% and pass it to person 2 and he continue for another 40% and last person finish it), they use method called concurrency
+If they do it simultaneously on their own, they use method called parallelism
