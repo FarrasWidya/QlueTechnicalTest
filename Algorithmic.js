@@ -12,7 +12,7 @@ Note that 2,1,1 is same as 1,2,1 or 1,1,2.
 
 function showAllSets(arr) {
   if (arr.length != 1) {
-    console.log(arr) // output
+    console.log(arr) // output final
   }
 }
 function findAllSets(arr, i, n) {
